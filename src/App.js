@@ -9,6 +9,7 @@ import About from "./component/About/About";
 import Landing from "./component/Landing/Landing";
 import Download from "./component/Download/Download";
 import React from "react";
+import Footer from "./component/Footer/Footer";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/signup" element={<Signup />}></Route>
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
+      <Footer />
     </div>
   );
 }

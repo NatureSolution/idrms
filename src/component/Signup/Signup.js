@@ -58,7 +58,7 @@ const Signup = () => {
                   <input
                     type="text"
                     className="form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                    id="exampleFormControlInput2"
+                    id="exampleFormControlInput1"
                     placeholder="Full Name"
                   />
                 </div>
@@ -76,7 +76,7 @@ const Signup = () => {
                   <input
                     type="email"
                     className="form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                    id="exampleFormControlInput2"
+                    id="exampleFormControlInput3"
                     placeholder="Email address"
                   />
                 </div>
@@ -86,7 +86,7 @@ const Signup = () => {
                   <input
                     type="password"
                     className="form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                    id="exampleFormControlInput2"
+                    id="exampleFormControlInput4"
                     placeholder="Password"
                   />
                 </div>
@@ -121,7 +121,7 @@ const Signup = () => {
                       href="#!"
                       className="text-red-600 hover:text-red-700 focus:text-red-700 transition duration-200 ease-in-out"
                     >
-                      <Link to="/login">Login</Link>
+                      <Link to="/login"> Login</Link>
                     </a>
                   </p>
                 </div>

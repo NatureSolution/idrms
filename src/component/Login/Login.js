@@ -9,9 +9,9 @@ const Login = () => {
           <div className="flex xl:justify-center lg:justify-between justify-center items-center flex-wrap h-full g-6">
             <div className="grow-0 shrink-1 md:shrink-0 basis-auto xl:w-6/12 lg:w-6/12 md:w-9/12 mb-12 md:mb-0">
               <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+                src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg"
                 className="w-full"
-                alt="Sample image"
+                alt="Phone"
               />
             </div>
             <div className="xl:ml-20 xl:w-5/12 lg:w-5/12 md:w-8/12 mb-12 md:mb-0">
@@ -80,10 +80,7 @@ const Login = () => {
                       className="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
                       id="exampleCheck2"
                     />
-                    <label
-                      className="form-check-label inline-block text-gray-800"
-                      for="exampleCheck2"
-                    >
+                    <label className="form-check-label inline-block text-gray-800">
                       Remember me
                     </label>
                   </div>
@@ -105,7 +102,7 @@ const Login = () => {
                       href="#!"
                       className="text-red-600 hover:text-red-700 focus:text-red-700 transition duration-200 ease-in-out"
                     >
-                      <Link to="/signup">Register</Link>
+                      <Link to="/signup"> Register</Link>
                     </a>
                   </p>
                 </div>

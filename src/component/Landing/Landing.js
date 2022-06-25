@@ -23,7 +23,13 @@ const Landing = () => {
       <br />
       <br />
       <br />
-      <div></div>
+      <div>
+        <img
+          src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+          className="w-full"
+          alt="Sample image"
+        />
+      </div>
       <br />
       <br />
       <br />
