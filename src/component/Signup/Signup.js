@@ -1,5 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import google from "../../Image/Icon/icons8-google-48.svg";
+import facebook from "../../Image/Icon/icons8-facebook-48.svg";
+import github from "../../Image/Icon/icons8-github-50.svg";
 
 const Signup = () => {
   return (
@@ -18,34 +21,16 @@ const Signup = () => {
               <form>
                 <div className="flex flex-row items-center justify-center lg:justify-start">
                   <p className="text-lg mb-0 mr-4">Register in with</p>
-                  <button
-                    type="button"
-                    data-mdb-ripple="true"
-                    data-mdb-ripple-color="light"
-                    className="inline-block p-3 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out mx-1"
-                  >
-                    {/* <!-- Facebook --> */}
-                    <p>Facebook</p>
+                  <button>
+                    <img className="w-15 mx-3" src={google} alt="" />
                   </button>
 
-                  <button
-                    type="button"
-                    data-mdb-ripple="true"
-                    data-mdb-ripple-color="light"
-                    className="inline-block p-3 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out mx-1"
-                  >
-                    {/* <!-- Twitter --> */}
-                    <p>Twiter</p>
+                  <button>
+                    <img className="w-15 mx-3" src={facebook} alt="" />
                   </button>
 
-                  <button
-                    type="button"
-                    data-mdb-ripple="true"
-                    data-mdb-ripple-color="light"
-                    className="inline-block p-3 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out mx-1"
-                  >
-                    {/* <!-- Linkedin --> */}
-                    <p>Linked In</p>
+                  <button>
+                    <img className="w-15 mx-3" src={github} alt="" />
                   </button>
                 </div>
 
