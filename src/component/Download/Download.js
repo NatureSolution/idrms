@@ -1,8 +1,10 @@
 import React from "react";
+import Tooltip from "../Toottip/Tooltip";
 
 const Download = () => {
   return (
     <div>
+      <div></div>
       <div>
         <p class="text-base font-light leading-relaxed mt-0 mb-0 text-gray-800">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
@@ -179,6 +181,7 @@ const Download = () => {
           </div>
         </div>
       </div>
+      <Tooltip></Tooltip>
     </div>
   );
 };
