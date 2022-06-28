@@ -4,7 +4,27 @@ import google from "../../Image/Icon/icons8-google-48.svg";
 import facebook from "../../Image/Icon/icons8-facebook-48.svg";
 import github from "../../Image/Icon/icons8-github-50.svg";
 
+import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import auth from "../../firebase.init";
+
+import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+
+
 const Signup = () => {
+  const [signInWithGoogle, user] = useSignInWithGoogle(auth);
+  const providerGoogle = new GoogleAuthProvider();
+  const handelGoogle = (e) =>{
+    signInWithPopup(auth, providerGoogle)
+    .then((result) => {
+      console.log(result)
+      // ...
+    }).catch((error) => {
+      console.log(error.message)
+      // ...
+    });
+  }
+
+
   return (
     <div>
       <section className="h-screen">
@@ -14,14 +34,15 @@ const Signup = () => {
               <img
                 src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
                 className="w-full"
-                alt="Sample image"
+                alt="Sample"
               />
             </div>
             <div className="xl:ml-20 xl:w-5/12 lg:w-5/12 md:w-8/12 mb-12 md:mb-0">
               <form>
                 <div className="flex flex-row items-center justify-center lg:justify-start">
                   <p className="text-lg mb-0 mr-4">Register in with</p>
-                  <button>
+                  <button onClick={handelGoogle}>GG</button>
+                  <button onClick={() => signInWithGoogle()}>
                     <img className="w-15 mx-3" src={google} alt="" />
                   </button>
 
@@ -102,12 +123,9 @@ const Signup = () => {
                   </button>
                   <p className="text-sm font-semibold mt-2 pt-1 mb-0">
                     Do you have an account?
-                    <a
-                      href="#!"
-                      className="text-red-600 hover:text-red-700 focus:text-red-700 transition duration-200 ease-in-out"
-                    >
-                      <Link to="/login"> Login</Link>
-                    </a>
+
+                    <Link className="text-red-600 hover:text-red-700 focus:text-red-700 transition duration-200 ease-in-out" to="/login"> Login</Link>
+
                   </p>
                 </div>
               </form>
