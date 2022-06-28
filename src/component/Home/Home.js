@@ -1,13 +1,14 @@
 import React from "react";
 import thumb from "../../Image/world.png";
 import Banner from "../Banner/Banner";
+import SimpleLog from "../SimpleLog/SimpleLog";
 
 const Home = () => {
   return (
     <div>
       <Banner />
       <div>
-        <img src={thumb} alt="" />
+        <SimpleLog />
       </div>
     </div>
   );
